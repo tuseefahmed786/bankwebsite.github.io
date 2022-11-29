@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600&display=swap');
+
+
+body {
+  margin: 0;
+  background-color: #F1F2ED;
+  color: black;
+
+}
+:root {
+  --blue: #1e90ff;
+  --white: black;
+  --padd: 1rem;
+  --cfont: 'Poppins', sans-serif;;
+}
+.fss-1 {
+  font-size: 1.5rem;
+}
+.navbar_align_2 {
+  display: none;
+}
+.max_width {
+  max-width: 1600px;
+  margin: auto;
+  padding: 1rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  width: 13rem;
+}
+header nav ul li {
+  padding: 0px var(--padd);
+}
+header nav ul a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: larger;
+  font-family: var(--cfont);
+}
+
+.login ul li {
+  list-style-type: none;
+}
+@media screen and (max-width: 572px) {
+  .hero_text {
+    padding: 1rem;
+  }
+}
+/* End Nav Bar  */
+
+/* Logo Css Start */
+/* 
+.logo_align{
+    position: relative;
+    top: -5rem;
+} */
+
+.logo_align p {
+  font-family: var(--cfont);
+  font-weight:500;
+  font-size: 30px;
+}
+
+/* Logo Css End */
+
+/* Main Here Css Start */
+
+.hero_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 85vh;
+  align-items: center;
+  color: var(--white);
+}
+
+.hero_text h1 {
+  font-size: 94px;
+    font-family: var(--cfont);
+    font-weight: 600;
+}
+.hero_text h4 {
+  font-size: 2rem;
+  font-style: italic;
+  margin: 2rem 0;
+}
+.hero_text a {
+  font-size: 16px;
+  font-family: var(--cfont);
+  font-weight: 500;
+  border-radius: inherit !important;
+}
+
+.hero_text p {
+  font-family: var(--cfont);
+  margin-top: 3rem;
+  max-width: initial;
+  font-size: x-large;
+}
+.hero_image {
+  width: 60rem;
+}
+
+.hero_image img {
+  width: 60%;
+  height: auto;
+  display: block;
+  margin-left:auto;
+
+}
+
+@media screen and (max-width: 836px) {
+  .hero_section {
+    flex-direction: column-reverse;
+    min-height: initial;
+  }
+  .navbar {
+    justify-content: space-around;
+  }
+  .hero_text {
+    position: relative;
+    top: 1rem;
+  }
+  .hero_image {
+    display: none;
+  }
+}
+.navbar_align_2 a{
+color: black;
+margin-left: 1rem;
+}
+@media screen and (max-width: 400px) {
+  .navbar_align_1 {
+    display: none;
+  }
+  .navbar_align_2 {
+    display: block;
+    margin-top: 3rem;
+  }
+  .hero_text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero_image {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .hero_image img {
+    width: 50%;
+  }
+  .hero_text h1 {
+    font-size: 4.5rem;
+  }
+}
+@media screen and (ma) {
+  
+}
+/* hero end */
+
+/* second secition start  */
+.second_main_text {
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+.section_second {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+
+  justify-content: space-around;
+}
+.second_box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.second_main_text h1 {
+  font-family: var(--cfont);
+  font-size: xxx-large;
+  text-align: center;
+}
+.second_box_layout {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+.second_box_layout img {
+  max-width: 100%;
+}
+.show_btn a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  font-size: x-large;
+  border-radius: 1rem;
+  padding: 0.7rem 2.2rem;
+  font-family: var(--cfont);
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+}
+.show_btn a:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+@media screen and (max-width: 308px) {
+  .hero_text h1 {
+    font-size: 2.5em;
+  }
+  .hero_text p {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 1898px) and (min-width: 1600px) {
+  .max_width {
+    max-width: 1600px;
+  }
+}
+@media screen and (max-width: 1600px) and (min-width: 1400px) {
+  .max_width {
+    max-width: 1400px;
+  }
+}
+@media screen and (max-width: 1400px) and (min-width: 1160px) {
+  .max_width {
+    max-width: 1150px;
+  }
+}
+@media screen and (max-width: 1160px) and (min-width: 1000px) {
+  .max_width {
+    max-width: 1000px;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 806px) {
+  .max_width {
+    max-width: 806px;
+  }
+}
