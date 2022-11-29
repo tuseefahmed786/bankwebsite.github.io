@@ -1,20 +1,18 @@
 * {
   box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600&display=swap");
 
 body {
   margin: 0;
-  background-color: #F1F2ED;
+  background-color: #f1f2ed;
   color: black;
-
 }
 :root {
   --blue: #1e90ff;
   --white: black;
   --padd: 1rem;
-  --cfont: 'Poppins', sans-serif;;
+  --cfont: "Poppins", sans-serif;
 }
 .fss-1 {
   font-size: 1.5rem;
@@ -25,7 +23,7 @@ body {
 .max_width {
   max-width: 1600px;
   margin: auto;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 .navbar {
   display: flex;
@@ -37,6 +35,7 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 13rem;
+  margin-right: 1rem;
 }
 header nav ul li {
   padding: 0px var(--padd);
@@ -67,7 +66,7 @@ header nav ul a {
 
 .logo_align p {
   font-family: var(--cfont);
-  font-weight:500;
+  font-weight: 500;
   font-size: 30px;
 }
 
@@ -86,8 +85,8 @@ header nav ul a {
 
 .hero_text h1 {
   font-size: 94px;
-    font-family: var(--cfont);
-    font-weight: 600;
+  font-family: var(--cfont);
+  font-weight: 600;
 }
 .hero_text h4 {
   font-size: 2rem;
@@ -115,10 +114,46 @@ header nav ul a {
   width: 60%;
   height: auto;
   display: block;
-  margin-left:auto;
-
+  margin-left: auto;
+}
+.sections_2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: var(--cfont);
+  margin-top: 2rem;
+}
+.inner_1 {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  padding: 2rem;
+  border: 2px solid gray;
+  border-bottom: none;
+  margin-bottom: 4rem;
+}
+.inner_1 p:first-child {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.inner_1 p {
+  font-weight: 100;
+  font-size: 12px;
 }
 
+.inner_2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.box {
+  max-width: 300px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+.box p {
+  font-weight: 100;
+  font-size: 12px;
+}
 @media screen and (max-width: 836px) {
   .hero_section {
     flex-direction: column-reverse;
@@ -135,9 +170,9 @@ header nav ul a {
     display: none;
   }
 }
-.navbar_align_2 a{
-color: black;
-margin-left: 1rem;
+.navbar_align_2 a {
+  color: black;
+  margin-left: 1rem;
 }
 @media screen and (max-width: 400px) {
   .navbar_align_1 {
@@ -150,6 +185,7 @@ margin-left: 1rem;
   .hero_text {
     text-align: center;
   }
+ 
 }
 
 @media screen and (max-width: 500px) {
@@ -165,7 +201,6 @@ margin-left: 1rem;
   }
 }
 @media screen and (ma) {
-  
 }
 /* hero end */
 
@@ -182,42 +217,7 @@ margin-left: 1rem;
 
   justify-content: space-around;
 }
-.second_box {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.second_main_text h1 {
-  font-family: var(--cfont);
-  font-size: xxx-large;
-  text-align: center;
-}
-.second_box_layout {
-  text-align: center;
-  margin: 2rem 0;
-  padding: 0 1rem;
-}
-.second_box_layout img {
-  max-width: 100%;
-}
-.show_btn a {
-  text-decoration: none;
-  background-color: black;
-  color: white;
-  font-size: x-large;
-  border-radius: 1rem;
-  padding: 0.7rem 2.2rem;
-  font-family: var(--cfont);
-  font-weight: 900;
-  letter-spacing: 0.1rem;
-}
-.show_btn a:hover {
-  background-color: white;
-  border: 1px solid black;
-  color: black;
-}
+
 @media screen and (max-width: 308px) {
   .hero_text h1 {
     font-size: 2.5em;
@@ -236,6 +236,7 @@ margin-left: 1rem;
   .max_width {
     max-width: 1400px;
   }
+
 }
 @media screen and (max-width: 1400px) and (min-width: 1160px) {
   .max_width {
